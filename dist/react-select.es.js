@@ -721,8 +721,8 @@ var Select$1 = function (_React$Component) {
 	}
 
 	createClass(Select, [{
-		key: 'componentWillMount',
-		value: function componentWillMount() {
+		key: 'UNSAFE_componentWillMount',
+		value: function UNSAFE_componentWillMount() {
 			this._instancePrefix = 'react-select-' + (this.props.instanceId || ++instanceId) + '-';
 			var valueArray = this.getValueArray(this.props.value);
 
@@ -743,8 +743,8 @@ var Select$1 = function (_React$Component) {
 			}
 		}
 	}, {
-		key: 'componentWillReceiveProps',
-		value: function componentWillReceiveProps(nextProps) {
+		key: 'UNSAFE_componentWillReceiveProps',
+		value: function UNSAFE_componentWillReceiveProps(nextProps) {
 			var valueArray = this.getValueArray(nextProps.value, nextProps);
 
 			if (nextProps.required) {
@@ -2097,8 +2097,8 @@ var Async = function (_Component) {
 			}
 		}
 	}, {
-		key: 'componentWillReceiveProps',
-		value: function componentWillReceiveProps(nextProps) {
+		key: 'UNSAFE_componentWillReceiveProps',
+		value: function UNSAFE_componentWillReceiveProps(nextProps) {
 			if (nextProps.options !== this.props.options) {
 				this.setState({
 					options: nextProps.options
